@@ -17,37 +17,35 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer__col">
-            <h4>Work</h4>
+            <h4>Pages</h4>
             <ul>
-              <li><a href="/work">Selected projects</a></li>
-              <li><a href="/about">About the practice</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="/services">Services</a></li>
-              <li><a href="/blog">Engineering notes</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/faq">FAQ</a></li>
             </ul>
           </div>
           <div className="footer__col">
-            <h4>Reach out</h4>
+            <h4>Services</h4>
             <ul>
-              <li><a href={`mailto:${SITE.social.email}`}>{SITE.social.email}</a></li>
-              <li><a href="https://x.com/PartnersStudio" target="_blank" rel="noreferrer">Twitter</a></li>
-              <li><a href={SITE.social.github} target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href={SITE.social.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="/services">Software Development</a></li>
+              <li><a href="/services">AI Development</a></li>
+              <li><a href="/services">Mobile Apps</a></li>
+              <li><a href="/services">Cloud & DevOps</a></li>
             </ul>
           </div>
           <div className="footer__col">
-            <h4>Address</h4>
+            <h4>Contact</h4>
             <ul>
-              <li>Bangalore, India</li>
-              <li>hello@partners.dev</li>
+              <li><a href="mailto:hello@partners.dev">hello@partners.dev</a></li>
+              <li><a href="tel:+15550123456">+1 555 012 3456</a></li>
+              <li><a href="/contact">Get a free consult</a></li>
             </ul>
           </div>
         </div>
         <div className="footer__bottom">
           <p>&copy; {new Date().getFullYear()} Partners. All rights reserved.</p>
-          <ul>
-            <li><a href="/privacy">Privacy</a></li>
-            <li><a href="/terms">Terms</a></li>
-          </ul>
         </div>
       </div>
     </footer>

@@ -19,9 +19,6 @@ export default function Nav() {
               {item.label}
             </NavLink>
           ))}
-          <NavLink to="/contact" className="btn btn--small nav__cta">
-            Get in touch
-          </NavLink>
         </nav>
       </div>
     </header>

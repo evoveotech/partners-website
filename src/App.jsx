@@ -1,15 +1,14 @@
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { SITE, NAV_ITEMS } from './content/config';
+import { SITE } from './content/config';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import WorkPage from './pages/WorkPage';
-import CaseStudyPage from './pages/CaseStudyPage';
-import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
-import BlogIndexPage from './pages/BlogIndexPage';
-import BlogPostPage from './pages/BlogPostPage';
+import PortfolioPage from './pages/PortfolioPage';
+import IndustriesPage from './pages/IndustriesPage';
+import AboutPage from './pages/AboutPage';
+import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
 
 export default function App() {
@@ -17,7 +16,7 @@ export default function App() {
     <BrowserRouter>
       <Helmet>
         <title>Partners — Production software, engineered for scale.</title>
-        <meta name="description" content="Partners is a development practice building high-performance, high-availability web products for startups and established brands." />
+        <meta name="description" content="Partners is a development practice building high-performance, high-availability web products for startups and established brands. Browse selected work, read engineering notes, and see what we can build for you." />
         <link rel="canonical" href="https://partners.dev/" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -41,12 +40,11 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/work" element={<WorkPage />} />
-            <Route path="/work/:slug" element={<CaseStudyPage />} />
-            <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/blog" element={<BlogIndexPage />} />
-            <Route path="/blog/:slug" element={<BlogPostPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/industries" element={<IndustriesPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/faq" element={<FaqPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
